@@ -33,9 +33,6 @@ def addContests(upcoming):
     events = event_list.get('items', [])
     events_summary = [event['summary'] for event in events]
 
-    print(events_summary)
-    print(upcoming)
-
     for index, row in upcoming.iterrows():
         name = row['名前']
         start = row['開始時刻']
